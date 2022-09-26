@@ -47,7 +47,7 @@ describe 'Doctors API' do
       end
     end
   end
-  path '/v1/doctors/{id}' do
+  path 'api/v1/doctors/{id}' do
     put 'Update a doctor' do
       tags 'Doctors'
       consumes 'application/json'
