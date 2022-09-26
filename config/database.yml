@@ -5,18 +5,18 @@ default: &default
 
 development:
   <<: *default
-  database: Book_An_Appointment_With_A_Doctor_productionnt
+  database: Book_An_Appointment_With_A_Doctor
   username: postgres
-  password: Martial@5009
+  password: chemical25
 
 test:
   <<: *default
-  database: Book_An_Appointment_With_A_Doctor_production
+  database: Book_An_Appointment_With_A_Doctor
   username: postgres
-  password: Martial@5009
+  password: chemical25
 
 production:
   <<: *default
-  database: Book_An_Appointment_With_A_Doctor_production
-  username: Book_An_Appointment_With_A_Doctor_production
+  database: Book_An_Appointment_With_A_Doctor
+  username: Book_An_Appointment_With_A_Doctor
   password: <%= ENV["BOOK_AN_APPOINTMENT_WITH_A_DOCTOR"] %>
