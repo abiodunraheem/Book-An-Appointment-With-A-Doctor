@@ -72,7 +72,7 @@ describe 'Doctors API' do
       end
     end
   end
-  path '/v1/doctors/{id}' do
+  path 'api/v1/doctors/{id}' do
     delete 'Delete a doctor' do
       tags 'Doctors'
       parameter name: :id, in: :path, type: :string, required: true
