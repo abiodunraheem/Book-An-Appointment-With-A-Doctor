@@ -1,7 +1,7 @@
 require 'swagger_helper'
 
 describe 'Doctors API' do
-  path '/v1/doctors' do
+  path 'api/v1/doctors' do
     get 'Get all doctors' do
       tags 'Doctors'
       produces 'application/json'
@@ -10,7 +10,7 @@ describe 'Doctors API' do
       end
     end
   end
-  path '/v1/doctors' do
+  path 'api/v1/doctors' do
     post 'Create a doctor' do
       tags 'Doctors'
       consumes 'application/json'
