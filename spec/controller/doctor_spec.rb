@@ -32,7 +32,7 @@ describe 'Doctors API' do
       end
     end
   end
-  path '/v1/doctors/{id}' do
+  path 'api/v1/doctors/{id}' do
     get 'Get a doctor' do
       tags 'Doctors'
       produces 'application/json'
