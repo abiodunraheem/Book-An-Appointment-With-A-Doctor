@@ -10,8 +10,6 @@ development:
 test:
   <<: *default
   database: Book_An_Appointment_With_A_Doctor_production
-  username: postgres
-  password: Martial@5009 
 
 production:
   <<: *default
