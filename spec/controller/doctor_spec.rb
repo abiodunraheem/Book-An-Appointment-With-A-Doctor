@@ -23,11 +23,11 @@ describe 'Doctors API' do
         required: %w[name specialty]
       }
       response '201', 'doctor created' do
-        let(:doctor) { { name: 'Moises', specialty: 'Pediatria' } }
+        let(:doctor) { { name: 'Abiodun', specialty: 'Raheem' } }
         # run_test!
       end
       response '422', 'invalid request' do
-        let(:doctor) { { name: 'Miller' } }
+        let(:doctor) { { name: 'Stanley' } }
         # run_test!
       end
     end
