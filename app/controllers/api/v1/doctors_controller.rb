@@ -1,5 +1,8 @@
 class Api::V1::DoctorsController < ApplicationController
-  
+  def index
+    @doctors = Doctor.where(user_id: params[:user_id])
+    render json: @doctors
+  end
 
   def create
     @user = User.find(params[:user_id])
