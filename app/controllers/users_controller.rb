@@ -1,5 +1,5 @@
-
 class UsersController < ApplicationController
+
   def register
     if User.find_by(username: params[:username].downcase)
       render json: { error: 'Username already exists! please choose another one.' }
@@ -26,6 +26,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.permit(:name, :username, :email)
+    params.permit(:username, :email)
   end
 end
