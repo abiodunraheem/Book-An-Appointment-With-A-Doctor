@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   get 'api/v1/login/:username', to: 'users#login'
   namespace :api do
     namespace :v1 do
-      get 'splash', to: 'pages#index'
-      get 'reservations', to: 'reservations#index'
+      get 'pages/index'
       resources :doctors, only: [:index, :create, :destroy]
     end
   end
