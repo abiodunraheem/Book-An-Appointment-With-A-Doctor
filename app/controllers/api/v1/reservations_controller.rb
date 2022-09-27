@@ -6,7 +6,7 @@ class Api::V1::ReservationsController < ApplicationController
     render json: @reservations.as_json(include: :doctor)
   end
 
-  def show;end
+  def show; end
 
   def create
     @user = User.find(params[:user_id])
