@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users,
-  controllers: {
-      sessions: 'users/sessions',
-      registrations: 'users/registrations'
-  }
+  post 'api/v1/register/:username/:name/:email', to: 'users#register'
+  get 'api/v1/login/:username', to: 'users#login'
   namespace :api do
     namespace :v1 do
       get 'pages/index'
