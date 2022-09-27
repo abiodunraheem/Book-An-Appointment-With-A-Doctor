@@ -1,22 +1,21 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: postgres
+  password: chemical25
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: Book_An_Appointment_With_A_Doctor_productionnt
-  # username: postgres
-  # password: Martial@5009
+  database: Book_An_Appointment_With_A_Doctor_production
 
 test:
   <<: *default
   database: Book_An_Appointment_With_A_Doctor_production
-  # username: postgres
-  # password: Martial@5009
 
 production:
   <<: *default
   database: Book_An_Appointment_With_A_Doctor_production
   username: Book_An_Appointment_With_A_Doctor_production
   password: <%= ENV["BOOK_AN_APPOINTMENT_WITH_A_DOCTOR"] %>
+  adapter: postgresql
