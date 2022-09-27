@@ -1,3 +1,3 @@
 class Api::V1::PagesController < ApplicationController
-  def index; end
+  def index;end
 end

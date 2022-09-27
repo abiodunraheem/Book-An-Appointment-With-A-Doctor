@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  get 'reservations/index'
-  get 'reservations/show'
-  get 'reservations/create'
   post 'api/v1/register/:username/:email', to: 'users#register'
   get 'api/v1/login/:username', to: 'users#login'
   namespace :api do
     namespace :v1 do
-      get 'pages/splash'
+      get 'reservations/:user_id', to: 'reservations#index'
+      post 'reservations/:user_id', to: 'reservations#create'
+      get 'splash', to: 'pages#index'
       resources :doctors, only: [:index, :create, :destroy]
     end
   end

@@ -1,1 +1,37 @@
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <h1>Reservations</h1>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Room</th>
+                <th>Guest</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @reservations.each do |reservation| %>
+                <tr>
+                <td><%= reservation.start_date %></td>
+                <td><%= reservation.end_date %></td>
+                <td><%= reservation.room.name %></td>
+                <td><%= reservation.guest.name %></td>
+                <td><%= reservation.price %></td>
+                <td>
+                    <%= link_to 'Show', reservation_path(reservation) %>
+                    <%= link_to 'Edit', edit_reservation_path(reservation) %>
+                    <%= link_to 'Destroy', reservation_path(reservation), method: :delete, data: { confirm: 'Are you sure?' } %>
+                </td>
+                </tr>
+            <% end %>
+            </tbody>
+        </table>
+        <%= link_to 'New Reservation', new_reservation_path, class: "btn btn-primary" %>
+        </div>
+    </div>
+</div>
