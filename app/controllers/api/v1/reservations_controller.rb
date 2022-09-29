@@ -1,29 +1,27 @@
 class Api::V1::ReservationsController < ApplicationController
   def index
     @reservations = Reservation.where(user_id: params[:user_id])
-    @user = User.all
-    # @reservations = @user.reservation.includes(:doctor)
-    render json: @reservations.as_json(include: :doctor)
+    render json: @reservations
   end
 
-  def show; end
+  def show
+    @reservation = Reservation.find(params[:id])
+    render json: @reservation
+  end
 
   def create
-    @user = User.find(params[:user_id])
-    @reservation = @user.reservations.new(reservation_params)
-    @reservation.user_id = @user.id
-    @reservation.doctor_id = reservation_params[:doctor_id]
-
+    @reservation = Reservation.new(reservation_params)
+    @reservation.user_id = params[:user_id]
     if @reservation.save
-      render json: { reservation: @reservation, created: true }
+      render json: @reservation
     else
-      render json: { error: 'There was an error, please try again!' }
+      render json: @reservation.errors
     end
   end
 
   private
 
   def reservation_params
-    params.require(:reservation).permit(:date, :city, :doctor)
+    params.require(:reservation).permit(:date, :city, :doctor_id)
   end
 end

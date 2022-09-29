@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'pages/index'
-      get 'reservations/index'
+      get 'doctors/index'
+      get 'reservations'
+      get 'reservations/:user_id', to: 'reservations#index'
+      post 'reservations/:user_id', to: 'reservations#create'
       resources :doctors, only: [:index, :create, :destroy]
     end
   end
