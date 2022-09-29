@@ -19,6 +19,6 @@ class Api::V1::ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:date, :city, :doctor_id)
+    params.require(:reservation).permit(:date, :city, :doctor)
   end
 end
