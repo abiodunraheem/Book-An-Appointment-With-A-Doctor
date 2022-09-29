@@ -3,6 +3,6 @@ class Doctor < ApplicationRecord
   has_many :reservations, dependent: :destroy
 
   validates :name, :speciality, :location, :email, presence: true, length: { maximum: 255 }
-  validates :bill, presence: true, numericality: { only_integer: true }
-  has_one_attached :avatar
+  validates :avatar, presence: true
+  validates :bill, presence: true, numericality: { only_float: true }
 end
