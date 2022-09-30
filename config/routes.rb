@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'doctors/:user_id', to: 'doctors#index'
       post 'doctors/:user_id', to: 'doctors#create'
       resources :reservations
+        get 'reservations/:user_id', to: 'reservations#show'
       resources :doctors, only: [:index, :create, :destroy]
     end
   end
