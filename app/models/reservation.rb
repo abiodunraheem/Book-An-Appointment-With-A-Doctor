@@ -2,5 +2,5 @@ class Reservation < ApplicationRecord
   belongs_to :user
   belongs_to :doctor
 
-  validates :datetime, presence: true
+  validates :datetime, :city, presence: true
 end

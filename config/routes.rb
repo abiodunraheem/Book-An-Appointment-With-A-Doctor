@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   get 'users/:id', to: 'users#index'
   namespace :api do
     namespace :v1 do
-      get 'doctors/:user_id', to: 'doctors#index'
-      post 'doctors/:user_id', to: 'doctors#create'
-      resources :reservations
-        get 'reservations/:user_id', to: 'reservations#show'
-      resources :doctors, only: [:index, :create, :destroy]
+      get 'reservations/:user_id', to: 'reservations#index'
+      resources :users, only: [:index, :create] do
+        resources :doctors, only: [:index, :show, :create, :destroy]
+        resources :reservations, only: [:index, :create]
+      end
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
