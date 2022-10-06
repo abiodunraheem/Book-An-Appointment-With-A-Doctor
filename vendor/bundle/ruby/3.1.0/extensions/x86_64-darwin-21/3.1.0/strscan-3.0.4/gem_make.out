@@ -1,0 +1,17 @@
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-gnqqtc sitelibdir\=./.gem.20220926-67182-gnqqtc clean
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-gnqqtc sitelibdir\=./.gem.20220926-67182-gnqqtc
+compiling strscan.c
+linking shared-object strscan.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-gnqqtc sitelibdir\=./.gem.20220926-67182-gnqqtc install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220926-67182-gnqqtc

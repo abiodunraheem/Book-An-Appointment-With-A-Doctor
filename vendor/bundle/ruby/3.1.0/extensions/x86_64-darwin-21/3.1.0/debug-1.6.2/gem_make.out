@@ -1,0 +1,17 @@
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-wywhlm sitelibdir\=./.gem.20220926-67182-wywhlm clean
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-wywhlm sitelibdir\=./.gem.20220926-67182-wywhlm
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-wywhlm sitelibdir\=./.gem.20220926-67182-wywhlm install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20220926-67182-wywhlm/debug

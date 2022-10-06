@@ -1,0 +1,16 @@
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-hfrpin sitelibdir\=./.gem.20220926-67182-hfrpin clean
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-hfrpin sitelibdir\=./.gem.20220926-67182-hfrpin
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-hfrpin sitelibdir\=./.gem.20220926-67182-hfrpin install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220926-67182-hfrpin
