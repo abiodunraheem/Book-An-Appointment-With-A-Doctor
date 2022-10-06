@@ -1,6 +1,6 @@
 class Api::V1::DoctorsController < ApplicationController
   def index
-    @doctors = Doctor.where(user_id: params[:user_id])
+    @doctors = Doctor.all
     render json: @doctors
   end
 
