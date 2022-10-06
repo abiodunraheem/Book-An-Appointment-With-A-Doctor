@@ -1,0 +1,16 @@
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-22g5tm sitelibdir\=./.gem.20220926-67182-22g5tm clean
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-22g5tm sitelibdir\=./.gem.20220926-67182-22g5tm
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/stanleymartialsimeon/Documents/GitHub/microverse/rails/Book-An-Appointment-With-A-Doctor/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220926-67182-22g5tm sitelibdir\=./.gem.20220926-67182-22g5tm install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220926-67182-22g5tm/bootsnap
