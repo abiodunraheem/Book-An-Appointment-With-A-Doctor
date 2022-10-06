@@ -16,3 +16,4 @@ production:
   database: Book_An_Appointment_With_A_Doctor_production
   username: Book_An_Appointment_With_A_Doctor_production
   password: <%= ENV["BOOK_AN_APPOINTMENT_WITH_A_DOCTOR"] %>
+  adapter: postgresql

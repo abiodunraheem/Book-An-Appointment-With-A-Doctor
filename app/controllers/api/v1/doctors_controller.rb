@@ -5,9 +5,7 @@ class Api::V1::DoctorsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
     @doctor = Doctor.new(doctor_params)
-    @doctor.user_id = @user.id
     if @doctor.save
       render json: { status: 201, message: 'doctor created successfully!', content: { doctor: @doctor } }
     else
@@ -31,6 +29,6 @@ class Api::V1::DoctorsController < ApplicationController
   private
 
   def doctor_params
-    params.permit(:name, :speciality, :bill, :avatar, :location, :email)
+    params.permit(:name, :speciality, :bill, :avatar, :location, :email, :user_id)
   end
 end
