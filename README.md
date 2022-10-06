@@ -6,7 +6,7 @@ Check out the [front-end]()
 repository.
 
 # API Documentation
-Check out the [API documentation](https://fierce-hollows-17198.herokuapp.com/api-docs/index.html)
+Check out the [API documentation]()
 
 ## GitHub Project
 Check out the [Kanban](https://github.com/users/abiodunraheem/projects/2/views/1) of our whole project.
@@ -57,9 +57,9 @@ rails db:migrate
 
 👤 **Emmanuel Moombe**
 
-GitHub: https://github.com/medsonmoombe
-Twitter: https://twitter.com/@emmanue78388405
-LinkedIn: https://www.linkedin.com/in/emmanuel-moombe-821918230/
+- GitHub: [Emmanuel Moombe](https://github.com/medsonmoombe)
+- Twitter: [Emmanuel Moombe](https://twitter.com/@emmanue78388405)
+- LinkedIn: [Emmanuel Moombe](https://www.linkedin.com/in/emmanuel-moombe-821918230/)
 
 ## :handshake: Contributing
 
