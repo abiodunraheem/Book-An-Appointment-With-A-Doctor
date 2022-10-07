@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'reservations/:user_id', to: 'reservations#index'
       post 'reservations/:user_id', to: 'reservations#create'
-      # get 'doctor/:doctor_id', to: 'doctors#show'
+      get 'api/v1/doctor/:id', to: 'doctors#show'
       resources :doctors, only: %i[index show create destroy]
       resources :users, only: %i[index create] do
         resources :reservations, only: %i[index show]

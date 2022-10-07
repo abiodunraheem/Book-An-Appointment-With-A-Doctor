@@ -4,6 +4,11 @@ class Api::V1::DoctorsController < ApplicationController
     render json: @doctors
   end
 
+  def show
+    @doctor = Doctor.find(params[:id])
+    render json: { doctor: @doctor }, status: :ok
+  end
+
   def create
     @doctor = Doctor.new(doctor_params)
     if @doctor.save
