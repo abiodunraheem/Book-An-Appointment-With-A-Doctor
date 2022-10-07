@@ -1,0 +1,145 @@
+---
+openapi: 3.0.1
+info:
+  title: book a doctors  API Documentation
+  version: v1
+paths:
+  "/api/v1/doctors":
+    get:
+      summary: list doctors
+      responses:
+        '200':
+          description: successful
+  "/api/v1/doctor/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show doctor
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete doctor
+      responses:
+        '200':
+          description: successful
+  "/api/v1/doctor":
+    post:
+      summary: create doctor
+      responses:
+        '200':
+          description: successful
+  "/api/v1/reserve/doctors/{date}":
+    parameters:
+    - name: date
+      in: path
+      description: date
+      required: true
+      schema:
+        type: string
+    get:
+      summary: reserve doctor
+      responses:
+        '200':
+          description: successful
+  "/api/v1/doctors/{user_id}":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: user_doctors doctors
+      responses:
+        '200':
+          description: successful
+  "/api/v1/reservation/{user_id}/{doctor_id}/{city}/{date}":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    - name: doctor_id
+      in: path
+      description: doctor_id
+      required: true
+      schema:
+        type: string
+    - name: city
+      in: path
+      description: city
+      required: true
+      schema:
+        type: string
+    - name: date
+      in: path
+      description: date
+      required: true
+      schema:
+        type: string
+    post:
+      summary: create reservation
+      responses:
+        '200':
+          description: successful
+  "/api/v1/reservations/{user_id}":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: list reservations
+      responses:
+        '200':
+          description: successful
+  "/api/v1/register/{username}/{email}":
+    parameters:
+    - name: username
+      in: path
+      description: username
+      required: true
+      schema:
+        type: string
+      schema:
+        type: string
+    - name: email
+      in: path
+      description: email
+      required: true
+      schema:
+        type: string
+    post:
+      summary: register user
+      responses:
+        '200':
+          description: successful
+  "/api/v1/login/{username}":
+    parameters:
+    - name: username
+      in: path
+      description: username
+      required: true
+      schema:
+        type: string
+    get:
+      summary: login user
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost

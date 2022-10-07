@@ -7,13 +7,7 @@ default: &default
 
 development:
   <<: *default
-<<<<<<< HEAD
   database: Book_An_Appointment_With_A_Doctor_productionnt
-=======
-  database: Book_An_Appointment_With_A_Doctor_production
-  username: postgres
-  password: Martial@5009
->>>>>>> c6c6ec05162c1e14c649ed278ceb049aaa2e2898
 
 test:
   <<: *default
