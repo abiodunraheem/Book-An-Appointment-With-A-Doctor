@@ -22,7 +22,7 @@ class Api::V1::DoctorsController < ApplicationController
     end
   end
 
-  def doctors_list
+  def show
     render json: Doctor.all
   end
 
