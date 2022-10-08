@@ -70,7 +70,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_27_132021) do
     t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< Updated upstream
     t.string "email"
+=======
+>>>>>>> Stashed changes
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
