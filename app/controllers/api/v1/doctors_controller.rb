@@ -9,6 +9,11 @@ class Api::V1::DoctorsController < ApplicationController
     render json: { doctor: @doctor }, status: :ok
   end
 
+  def user_doctors
+    @doctors = User.find(params[:user_id]).doctors
+    render json: { doctors: @doctors }, status: :ok
+  end
+  
   def create
     @doctor = Doctor.new(doctor_params)
     if @doctor.save
