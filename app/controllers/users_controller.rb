@@ -27,6 +27,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def user_doctor
+    @doctors = User.find(params[:id]).doctors
+    render json: { doctors: @doctors }, status: :ok
+  end
+
   private
 
   def user_params
