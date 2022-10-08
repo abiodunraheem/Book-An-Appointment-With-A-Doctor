@@ -1,0 +1,4 @@
+<%# Render all reservations %>
+<% @reservations.each do |reservation| %>
+  <%= render 'reservation', reservation: reservation %>
+<% end %>

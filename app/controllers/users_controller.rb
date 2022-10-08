@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
+  def index
+    @users = User.find_by(id: params[:id])
+    render json: @users
+  end
+
   def register
-    if User.find_by(username: params[:username].downcase)
+    if User.find_by(username: params[:username].to_s.downcase)
       render json: { error: 'Username already exists! please choose another one.' }
     else
       @user = User.new(user_params)
-      @user.username = @user.username.downcase
+      @user.username = @user.username.to_s.downcase
       if @user.save
         render json: { user: @user, logged_in: true }
       else
@@ -14,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def login
-    @user = User.find_by(username: params[:username].downcase)
+    @user = User.find_by(username: params[:username].to_s.downcase)
     if @user
       render json: { user: @user, logged_in: true }
     else

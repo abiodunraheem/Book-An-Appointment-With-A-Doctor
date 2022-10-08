@@ -10,4 +10,3 @@
 # Doctor.create(name:"Doctor Wess", speciality: "dentist", bill:20.2, location: "lusaka, Zambia", avatar: 'https://unsplash.com/photos/Zk3mk1eDOmY', email: 'test@test.com', user_id: 1)
 # Doctor.create(name:"Doctor John", speciality: "dentist", bill:20.2, location: "lusaka, Zambia", avatar: 'https://unsplash.com/photos/Zk3mk1eDOmY', email: 'test@test.com', user_id: 1)
 # Doctor.create(name:"Doctor Daniel", speciality: "dentist", bill:20.2, location: "lusaka, Zambia", avatar: 'https://unsplash.com/photos/Zk3mk1eDOmY', email: 'test@test.com', user_id: 1)
-# Doctor.create(name:"Doctor Alex", speciality: "dentist", bill:20.2, location: "lusaka, Zambia", avatar: 'https://unsplash.com/photos/Zk3mk1eDOmY', email: 'test@test.com', user_id: 1)

@@ -4,6 +4,11 @@ class Api::V1::DoctorsController < ApplicationController
     render json: @doctors
   end
 
+  def show
+    @doctor = Doctor.find(params[:id])
+    render json: { doctor: @doctor }, status: :ok
+  end
+
   def create
     @doctor = Doctor.new(doctor_params)
     if @doctor.save
@@ -13,17 +18,13 @@ class Api::V1::DoctorsController < ApplicationController
     end
   end
 
-  def destroy
+  def delete
     @doctor = Doctor.find(params[:id])
-    if @doctor.destroy
-      render json: { status: 201, message: 'doctor has been deleted successfully!', content: { doctor: @doctor } }
+    if @doctor.destroy!
+      render json: { success: 'The car has been deleted successfully' }, status: :ok
     else
-      render json: { error: 401, message: ' Operation did not succeed!' }
+      render json: { error: 'There was an error, please try again!' }, status: :internal_server_error
     end
-  end
-
-  def doctors_list
-    render json: Doctor.all
   end
 
   private
