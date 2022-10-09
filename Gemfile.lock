@@ -1,3 +1,23 @@
+GIT
+  remote: https://github.com/rswag/rswag.git
+  revision: 5a8c7fc9de2f7768da8ea2ae80036c5ed2259692
+  branch: master
+  specs:
+    rswag (0.0.0)
+      rswag-api (= 0.0.0)
+      rswag-specs (= 0.0.0)
+      rswag-ui (= 0.0.0)
+    rswag-api (0.0.0)
+      railties (>= 3.1, < 7.1)
+    rswag-specs (0.0.0)
+      activesupport (>= 3.1, < 7.1)
+      json-schema (>= 2.2, < 4.0)
+      railties (>= 3.1, < 7.1)
+      rspec-core (>= 2.14)
+    rswag-ui (0.0.0)
+      actionpack (>= 3.1, < 7.1)
+      railties (>= 3.1, < 7.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -100,6 +120,8 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.6.2)
+    json-schema (3.0.0)
+      addressable (>= 2.8)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -241,6 +263,7 @@ DEPENDENCIES
   rails (~> 7.0.4)
   rspec
   rspec-rails
+  rswag!
   rubocop
   selenium-webdriver
   tzinfo-data
