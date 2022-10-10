@@ -18,8 +18,7 @@ Check out the [Kanban](https://github.com/users/abiodunraheem/projects/2/views/1
 - Ruby on Rails
 - PostgreSQL
 
-## Live Demo
-[live]()
+[Link to the Front-End](https://github.com/abiodunraheem/book-an-appointment-with-a-doctor-frontend)
 
 ## installation
 
